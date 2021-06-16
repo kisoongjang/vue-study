@@ -18,16 +18,20 @@ import Gugudan from "@/components/Gugudan.vue";
 
 export default {
   name: "About",
+
   components: {
     Gugudan,
   },
+
   // Hook
   created() {
     console.log("created");
   },
+
   beforeMount() {
     console.log("BeforeMount");
   },
+
   mounted() {
     console.log("mounted");
     // this.sayhi();
@@ -49,11 +53,13 @@ export default {
   destroyed() {
     console.log("destroyed");
   },
+
   updated() {
     console.log("updated");
   },
 
   computed: {},
+
   data() {
     return {
       a: 1,
@@ -62,6 +68,7 @@ export default {
       obj: { a: 1, b: 2, c: ["b", "c"] },
     };
   },
+
   methods: {
     sayhi() {
       alert("Hi " + this.str);
